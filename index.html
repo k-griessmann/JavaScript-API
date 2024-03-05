@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+    <title>Chicago Art Institute Gallery</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Gallery</h1>
+    </div>
+    <div class="container">
+        <div class="gallery">
+            <figure class="gallery__item gallery__item--1" id="fig1" onclick="event.stopPropagation(); getArt(this.id, event);" >
+                <img class="gallery__img" src="images/The Crucifixion.jpg" alt="Francisco de Zurbarán. The Crucifixion, 1627. The Art Institute of Chicago.">
+            </figure>
+
+            <figure class="gallery__item gallery__item--2" id="fig2" onclick="event.stopPropagation(); getArt(this.id, event);" >
+                <img class="gallery__img" src="images/The Assumption of the Virgin.jpg" alt="El Greco (Doménikos Theotokópoulos). The Assumption of the Virgin, 1577–79. The Art Institute of Chicago.">
+            </figure>
+
+            <figure class="gallery__item gallery__item--3" id="fig3" onclick="event.stopPropagation(); getArt(this.id, event);" >
+                <img class="gallery__img" src="images/Cupid Chastised.jpg" alt="Bartolomeo Manfredi. Cupid Chastised, 1613. The Art Institute of Chicago.">
+            </figure>
+
+            <figure class="gallery__item gallery__item--4" id="fig4" onclick="event.stopPropagation(); getArt(this.id, event);" >
+                <img class="gallery__img" src="images/Near the Lake.jpg" alt="Pierre-Auguste Renoir. Near the Lake, 1879/80. The Art Institute of Chicago.">
+            </figure>
+
+            <figure class="gallery__item gallery__item--5" id="fig5" onclick="event.stopPropagation(); getArt(this.id, event);" >
+                <img class="gallery__img" src="images/View of Delphi with a Procession.jpg" alt="Claude Gellée, called Claude Lorrain. View of Delphi with a Procession, 1673. The Art Institute of Chicago.">
+            </figure>
+
+            <figure class="gallery__item gallery__item--6" id="fig6" onclick="event.stopPropagation(); getArt(this.id, event);" >
+                <img class="gallery__img" src="images/Magnolias on Light Blue Velvet Cloth.jpg" alt="Martin Johnson Heade. Magnolias on Light Blue Velvet Cloth, 1885/95. The Art Institute of Chicago.">
+            </figure>
+
+            <figure class="gallery__item gallery__item--7" id="fig7" onclick="event.stopPropagation(); getArt(this.id, event);" >
+                <img class="gallery__img" src="images/The Deep Sea (1).jpg" alt="James McNeill Whistler. Violet and Silver - The Deep Sea, 1893. The Art Institute of Chicago.">
+            </figure>
+
+            <figure class="gallery__item gallery__item--8" id="fig8" onclick="event.stopPropagation(); getArt(this.id, event);" >
+                <img class="gallery__img" src="images/Water Lilies.jpg" alt="Claude Monet. Water Lilies, 1906. The Art Institute of Chicago.">
+            </figure>
+
+            <figure class="gallery__item gallery__item--9" id="fig9" onclick="event.stopPropagation(); getArt(this.id, event);" >
+                <img class="gallery__img" src="images/Interrupted Reading.jpg" alt="Jean-Baptiste-Camille Corot. Interrupted Reading, 1870. The Art Institute of Chicago.">
+            </figure>
+
+            <figure class="gallery__item gallery__item--10" id="fig10" onclick="event.stopPropagation(); getArt(this.id, event);" >
+                <img class="gallery__img" src="images/Two Sisters (On the Terrace).jpg" alt="Pierre-Auguste Renoir. Two Sisters (On the Terrace), 1881. The Art Institute of Chicago.">
+            </figure>
+
+        </div>
+    </div>
+
+    <div id="myModal01" class="modal">
+        <div class="modal-content" id="modal01">
+          <span class="close" onclick="stopDisplay(1);">&times;</span>
+          <img src="" class="modal-content" id="img01">
+          <p class="caption">Francisco de Zurbarán. The Crucifixion, 1598-1664. The Art Institute of Chicago.</p>
+        </div>
+    </div>
+    <div id="myModal02" class="modal">
+        <div class="modal-content" id="modal02">
+            <span class="close" onclick="stopDisplay(2);">&times;</span>
+            <img src="" class="modal-content" id="img02">
+            <p class="caption">El Greco (Doménikos Theotokópoulos). The Assumption of the Virgin, 1577–79. The Art Institute of Chicago.</p>
+        </div>
+    </div>
+    <div id="myModal03" class="modal">
+        <div class="modal-content" id="modal03">
+            <span class="close" onclick="stopDisplay(3);">&times;</span>
+            <img src="" class="modal-content" id="img03">
+            <p class="caption">Bartolomeo Manfredi. Cupid Chastised, 1613. The Art Institute of Chicago.</p>
+        </div>
+    </div>
+    <div id="myModal04" class="modal">
+        <div class="modal-content" id="modal04">
+            <span class="close" onclick="stopDisplay(4);">&times;</span>
+            <img src="" class="modal-content" id="img04">
+            <p class="caption">Pierre-Auguste Renoir. Near the Lake, 1879/80. The Art Institute of Chicago.</p>
+        </div>
+    </div>
+    <div id="myModal05" class="modal">
+        <div class="modal-content" id="modal05">
+            <span class="close" onclick="stopDisplay(5);">&times;</span>
+            <img src="" class="modal-content" id="img05">
+            <p class="caption">Claude Gellée, called Claude Lorrain. View of Delphi with a Procession, 1673. The Art Institute of Chicago.</p>
+        </div>
+    </div>
+    <div id="myModal06" class="modal">
+        <div class="modal-content" id="modal06">
+            <span class="close" onclick="stopDisplay(6);">&times;</span>
+            <img src="" class="modal-content" id="img06">
+            <p class="caption">Martin Johnson Heade. Magnolias on Light Blue Velvet Cloth, 1885/95. The Art Institute of Chicago.</p>
+        </div>
+    </div>
+    <div id="myModal07" class="modal">
+        <div class="modal-content" id="modal07">
+            <span class="close" onclick="stopDisplay(7);">&times;</span>
+            <img src="" class="modal-content" id="img07">
+            <p class="caption">James McNeill Whistler. Violet and Silver - The Deep Sea, 1893. The Art Institute of Chicago.</p>
+        </div>
+    </div>
+    <div id="myModal08" class="modal">
+        <div class="modal-content" id="modal08">
+            <span class="close" onclick="stopDisplay(8)">&times;</span>
+            <img src="" class="modal-content" id="img08">
+            <p class="caption">Claude Monet. Water Lilies, 1906. The Art Institute of Chicago.</p>
+        </div>
+    </div>
+    <div id="myModal09" class="modal">
+        <div class="modal-content" id="modal09">
+            <span class="close" onclick="stopDisplay(9);">&times;</span>
+            <img src="" class="modal-content" id="img09">
+            <p class="caption">Jean-Baptiste-Camille Corot. Interrupted Reading, 1870. The Art Institute of Chicago.</p>
+        </div>
+    </div>
+    <div id="myModal10" class="modal">
+        <div class="modal-content" id="modal10">
+            <span class="close" onclick="stopDisplay(10);">&times;</span>
+            <img src="" class="modal-content" id="img10">
+            <p class="caption">Pierre-Auguste Renoir. Two Sisters (On the Terrace), 1881. The Art Institute of Chicago.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
